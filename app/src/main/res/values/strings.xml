@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">practice-5</string>
+
+    <string name="app_title">Material UI</string>
+
+    <!-- Strings for the CardView -->
+    <string name="card_view_title">Title</string>
+    <string name="card_view_description">Description</string>
+
+    <!-- Strings for NavDrawer Header -->
+    <string name="nav_header_title">Explore Earth!</string>
+    <string name="nav_header_image_description">Earth</string>
+
+    <!-- String got SnackBar -->
+    <string name="button_show_snackbar_text">Text for the Snackbar</string>
+
+    <!-- Strings for NavigationMenu -->
+    <string name="nav_home">Home</string>
+
+    <!-- Strings for BottomNavigationMenu -->
+    <string name="home">Home</string>
+    <string name="places">Places</string>
+    <string name="coordinates">Coordinates</string>
+
+    <!-- Strings for the menu on the FloatingActionButton -->
+    <string name="map_clean"> Clean Map </string>
+    <string name="add_marker">Add Marker</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+
+    <string name="frag_locations_header">Locations</string>
+    <string name="frag_home_welcome">Welcome Home</string>
+    <string name="random_marker">Random Coordinates</string>
+    <string name="longitude_hint">Number between -180 and 180</string>
+    <string name="frag_coords_header">Coordinates</string>
+    <string name="latitude_hint">Number between -90 and 90</string>
+    <string name="longitude_header">Longitude</string>
+    <string name="latitude_header">Lattitude</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

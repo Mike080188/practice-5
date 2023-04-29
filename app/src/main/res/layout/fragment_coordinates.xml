@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/frag_coords_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_coords_header"
+        android:textSize="24sp"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/longitude_text_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longitude_header"
+        android:layout_marginTop="22dp"
+        android:gravity="left"
+        android:textSize="24sp"
+        android:labelFor="@id/edit_text_longitude"
+        android:textColor="@color/dark_green"/>
+<!--        android:textStyle="bold" />-->
+    <EditText
+        android:id="@+id/edit_text_longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="32dp"
+        android:ems="10"
+        android:hint="@string/longitude_hint"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <TextView
+        android:id="@+id/latitude_text_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latitude_header"
+        android:layout_marginTop="22dp"
+        android:gravity="left"
+        android:textSize="24sp"
+        android:labelFor="@id/edit_text_longitude"
+        android:textColor="@color/dark_green"/>
+
+    <EditText
+        android:id="@+id/edit_text_latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="32dp"
+        android:ems="10"
+        android:hint="@string/latitude_hint"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <Button
+        android:id="@+id/frag_show_location_on_map_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_latitude"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/location_image"
+        android:background="@color/off_white"
+        android:gravity="center"
+        android:text="Show on Map"
+        android:textSize="13sp" />
+
+
+</LinearLayout>
