@@ -97,6 +97,5 @@
             android:textStyle="bold"
             android:background="?android:attr/selectableItemBackground"/>
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>

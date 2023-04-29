@@ -14,7 +14,6 @@ import com.example.practice_5.model.LocationAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class LocationsFragment extends Fragment{
 
     private LocationAdapter mLocationAdapter;
@@ -75,6 +74,5 @@ public class LocationsFragment extends Fragment{
     public void onAttach(Context context) {
         super.onAttach(context);
     }
-
 
 }

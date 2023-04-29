@@ -1,21 +1,14 @@
 package com.example.practice_5.activity;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
 
 import com.example.practice_5.R;
 import com.example.practice_5.fragment.HomeFragment;
@@ -39,9 +32,8 @@ public class MainActivity extends AppCompatActivity  {
         mNavigationView = findViewById(R.id.nav_view);
         mBottomNavigationView = findViewById(R.id.bottom_navigation_view);
 
-        /** Set the default fragment to the HomeFragment */
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment_container, new LocationsFragment()).commit();
+        // Set default fragment
+        replaceFragment(new HomeFragment());
 
         // Side nav listener
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -81,9 +73,6 @@ public class MainActivity extends AppCompatActivity  {
                 return false;
             }
         });
-
-        // Set default fragment
-        replaceFragment(new HomeFragment());
     }
 
     @Override
@@ -99,6 +88,7 @@ public class MainActivity extends AppCompatActivity  {
     }
 
     private void replaceFragment(Fragment fragment) {
+        /* Replace the fragment showing in fragment_container */
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container, fragment);

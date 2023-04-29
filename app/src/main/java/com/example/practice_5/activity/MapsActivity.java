@@ -130,7 +130,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void instantiateUIElements(){
         mFloatingActionButton = findViewById(R.id.fab);
-//        mFloatingActionButton.setPadding(0,0,0,0);
         mFloatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

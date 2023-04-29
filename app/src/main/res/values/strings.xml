@@ -3,16 +3,9 @@
 
     <string name="app_title">Material UI</string>
 
-    <!-- Strings for the CardView -->
-    <string name="card_view_title">Title</string>
-    <string name="card_view_description">Description</string>
-
     <!-- Strings for NavDrawer Header -->
     <string name="nav_header_title">Explore Earth!</string>
     <string name="nav_header_image_description">Earth</string>
-
-    <!-- String got SnackBar -->
-    <string name="button_show_snackbar_text">Text for the Snackbar</string>
 
     <!-- Strings for NavigationMenu -->
     <string name="nav_home">Home</string>
@@ -28,7 +21,7 @@
     <string name="zoom_in">Zoom In</string>
     <string name="zoom_out">Zoom Out</string>
 
-    <string name="frag_locations_header">Locations</string>
+    <string name="frag_locations_header">Places</string>
     <string name="frag_home_welcome">Welcome Home</string>
     <string name="random_marker">Random Coordinates</string>
     <string name="longitude_hint">Number between -180 and 180</string>

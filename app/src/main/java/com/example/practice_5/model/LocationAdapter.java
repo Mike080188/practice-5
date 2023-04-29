@@ -18,7 +18,7 @@ import com.example.practice_5.activity.MapsActivity;
 import java.util.List;
 
 public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.LocationViewHolder> {
-
+    /* Adapter class for the Locations RecyclerView */
     private List<Location> mLocations;
 
     private Context mContext;
@@ -29,7 +29,6 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.Locati
     @NonNull
     @Override
     public LocationViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
         mContext = parent.getContext();
 
         View view = LayoutInflater.from(mContext).inflate(R.layout.location_item, parent, false);
@@ -39,10 +38,10 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.Locati
         return new LocationViewHolder(view);
     }
 
-
     @Override
     public void onBindViewHolder(@NonNull LocationViewHolder holder, int position) {
         Location location = mLocations.get(position);
+        /* Listener for mShowOnMapButton which passes selected location to MapsActivity */
         holder.mShowOnMapButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,7 +63,6 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.Locati
 
     static class LocationViewHolder extends RecyclerView.ViewHolder {
         private TextView mNameTextView;
-
         private Button mShowOnMapButton;
 
         public LocationViewHolder(@NonNull View itemView) {
@@ -80,6 +78,7 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.Locati
     }
 
     public void passLocationToMapsActivity(Location location){
+        /* Open the maps activity passing Location extra*/
         Intent intent = new Intent(mContext, MapsActivity.class);
         intent.putExtra("location", location);
         mContext.startActivity(intent);
